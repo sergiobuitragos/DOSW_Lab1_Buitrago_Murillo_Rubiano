@@ -5,7 +5,7 @@ public class Estudiante {
     private String email;
     private int semestre;
 
-    public Student(String nombreCompleto, int edad, String email, int semestre) {
+    public Estudiante(String nombreCompleto, int edad, String email, int semestre) {
         this.nombreCompleto = nombreCompleto;
         this.edad = edad;
         this.email = email;
@@ -13,11 +13,11 @@ public class Estudiante {
     }
 
     public String getNombreCompleto() {
-        return nombreCompleto;
+        return fullName;
     }
 
     public int getEdad() {
-        return edad;
+        return age;
     }
 
     public String getEmail() {
@@ -25,6 +25,6 @@ public class Estudiante {
     }
 
     public int getSemestre() {
-        return semestre;
+        return semester;
     }
 }
