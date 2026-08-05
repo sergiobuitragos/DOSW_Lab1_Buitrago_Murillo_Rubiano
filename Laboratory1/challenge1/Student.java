@@ -1,16 +1,18 @@
 
 //Challenge1
+// Welcome Message
+
 public class Student {
 
     private String name;
     private int age;
-    private String email;
+    private String emailPrefix;
     private int semester;
 
     public Student(String name, int age, String email, int semester) {
         this.name = name;
         this.age = age;
-        this.email = email;
+        this.emailPrefix = email;
         this.semester = semester;
     }
 
@@ -22,8 +24,8 @@ public class Student {
         return age;
     }
 
-    public String getEmail() {
-        return email;
+    public String getEmailPrefixString() {
+        return emailPrefix;
     }
 
     public int getSemester() {
