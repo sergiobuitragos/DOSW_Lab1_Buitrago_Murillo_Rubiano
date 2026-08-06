@@ -25,6 +25,16 @@ public class Parallel_Race {
         return (count % 2 != 0) ? "list size is odd" : "list size is not odd";
     }
 
+    public Results getAllResults(List<Integer> numbers) {
+        int max = 0;
+        int min = findMin.apply(numbers);
+        int count = numbers.size();
+        String divisibleByTwo = (max % 2 == 0) ? "value divisible by 2" : "value not divisible by 2";
+        String sizeParity = (count % 2 != 0) ? "list size is odd" : "list size is even";
+
+        return new Results(max, min, count, divisibleByTwo, sizeParity);
+    }
+
     public static void main(String[] args) {
         List<Integer> numbers = List.of(5, 3, 8, 1, 9, 2, 7, 4, 6);
         System.out.println("Numbers: " + numbers);
