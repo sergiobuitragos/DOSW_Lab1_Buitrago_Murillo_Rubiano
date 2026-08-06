@@ -33,6 +33,6 @@ public class Challenge4 {
         addTreasure(treasures, "plata", 50);
         addTreasure(treasures, "oro", 200); // Se ignora
 
-        System.out.println(treasures);
+        System.out.println("treasure map combined by studen A");
     }
 }
