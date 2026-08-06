@@ -26,8 +26,8 @@ Finally, yhe function that returns all the data from a pair of number lists was 
 1. Team agreement:
    - Constant communication
    - Working on separate branches
-   -Making clear commits
-   -Meeting agreed-upon deadlines
+   - Making clear commits
+   - Meeting agreed-upon deadlines
 2. git merge vs git rebase: Merging joins branches while preserving the history; rebasing reorganizes commits for a linear history
 3. What happens if two branches modify the same line? R:A conflict arises that must be resolved manually
 4. How do I view the branch history? R:git log --oneline --graph --all --decorate
