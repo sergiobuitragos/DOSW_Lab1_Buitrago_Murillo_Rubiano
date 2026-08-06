@@ -14,4 +14,8 @@ public class Parallel_Race{
         Parallel_Race race = new Parallel_Race();
         System.out.println("Max value: " + race.findMax.apply(numbers));
     }
+
+    public String firstCollission(List<Integer> numbers){
+        return "Max: " + findMax.apply(numbers);
+    }
 }
