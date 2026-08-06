@@ -23,3 +23,17 @@ Finally, yhe function that returns all the data from a pair of number lists was 
 
 
 ##Conceptual Questionaire Answers
+1. Team agreement:
+   - Constant communication
+   - Working on separate branches
+   -Making clear commits
+   -Meeting agreed-upon deadlines
+2. git merge vs git rebase: Merging joins branches while preserving the history; rebasing reorganizes commits for a linear history
+3. What happens if two branches modify the same line? R:A conflict arises that must be resolved manually
+4. How do I view the branch history? R:git log --oneline --graph --all --decorate
+5. Commit vs Push: commit saves changes locally; push sends them to the remote repository
+6. git stash and git stash pop:stash temporarily saves changes; stash pop retrieves them
+7. HashMap vs Hashtable: HashMap is faster and allows null; Hashtable is synchronized and does not allow null
+8. Advantage of Collectors.toMap():Convert a collection into a map with less code and in a clearer way
+9. What does stream().map() do?: Transforms each element and returns a new Stream
+10. What does stream().filter() do?: Filters the elements based on a condition and returns a new Stream containing those that meet it
