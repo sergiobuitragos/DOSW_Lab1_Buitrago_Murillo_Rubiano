@@ -37,4 +37,10 @@ public class Parallel_Race {
 
         return (max % 2 == 0) ? "Value is multiple of 2" : "Value is not multiple of 2";
     }
+
+    public String thirdCollision(List<Integer> numbers) {
+        
+        int size = countElements.apply(numbers);
+        return (size % 2 == 0) ? "List size is even" : "List size is not even";
+    }
 }
