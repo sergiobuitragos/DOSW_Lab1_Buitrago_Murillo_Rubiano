@@ -42,6 +42,6 @@ public class Challenge4 {
         addToHashtable(hashTable, "ruby", 4);
         addToHashtable(hashTable, "gold", 12);
         addToHashtable(hashTable, "emerald", 6);
-        System.out.println("Hashtable: " + hashTable);
+        System.out.println("Treasure map combined by Student B");
     }
 }
