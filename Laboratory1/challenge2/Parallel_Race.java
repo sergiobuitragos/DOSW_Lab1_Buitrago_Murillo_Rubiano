@@ -14,15 +14,18 @@ public class Parallel_Race {
     Function<List<Integer>, Integer> countElements = (list) -> list.size();
 
     public static void main(String[] args) {
-        List<Integer> numbers = List.of(5, 3, 8, 1, 9, 2, 7, 4, 6);
-        System.out.println("Numbers: " + numbers);
 
-        Parallel_Race race = new Parallel_Race();
+    Parallel_Race race = new Parallel_Race();
 
-        System.out.println("Min value :" + race.findMin.apply(numbers));
-        System.out.println("Total elements: " + race.countElements.apply(numbers));
+    List<Integer> list1 = List.of(5,3,8,1,9,2,7,4,6);
 
-        System.out.println("Max value: " + race.findMax.apply(numbers));
+    List<Integer> list2 = List.of(10,20,30,15,25);
+
+    Results[] results = race.processTwoLists(list1, list2);
+
+    System.out.println(results[0]);
+    System.out.println(results[1]);
+    
     }
 
     public String firstCollission(List<Integer> numbers) {
@@ -42,5 +45,32 @@ public class Parallel_Race {
         
         int size = countElements.apply(numbers);
         return (size % 2 == 0) ? "List size is even" : "List size is not even";
+    }
+
+    public Results processList(List<Integer> numbers){
+
+    int max = findMax.apply(numbers);
+    int min = findMin.apply(numbers);
+    int count = countElements.apply(numbers);
+
+    boolean multipleOfTwo = max % 2 == 0;
+
+    String sizeType = count % 2 == 0 ? "EVEN" : "ODD";
+
+    return new Results(max, min, count, multipleOfTwo, sizeType);
+    }
+
+    public Results[] processTwoLists(
+        List<Integer> list1,
+        List<Integer> list2){
+
+    Results result1 = processList(list1);
+    Results result2 = processList(list2);
+
+    return new Results[]{
+            result1,
+            result2
+    };
+
     }
 }
