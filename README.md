@@ -1,4 +1,4 @@
-<img width="525" height="229" alt="image" src="https://github.com/user-attachments/assets/c899b1f2-0a3e-4faf-b2e8-0f71150be24e" /># DOSW_Lab1_Buitrago_Murillo_Rubiano
+DOSW_Lab1_Buitrago_Murillo_Rubiano
 Lab 1 de Dosw
 
 ##Team Members
