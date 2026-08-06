@@ -31,4 +31,10 @@ public class Parallel_Race {
         int count = countElements.apply(numbers);
         return "Max: " + max + ", Min: " + min + ", Count: " + count;
     }
+
+    public String secondColision(List<Integer> numbers) {
+        int max = findMax.apply(numbers);
+
+        return (max % 2 == 0) ? "Value is multiple of 2" : "Value is not multiple of 2";
+    }
 }
