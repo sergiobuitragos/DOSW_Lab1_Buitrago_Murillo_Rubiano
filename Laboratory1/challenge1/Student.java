@@ -1,15 +1,15 @@
-public class Estudiante {
+public class Student {
 
-    private String nombreCompleto;
-    private int edad;
-    private String email;
-    private int semestre;
+    private String fullName;
+    private int age;
+    private String prefixEmail;
+    private int semester;
 
-    public Estudiante(String nombreCompleto, int edad, String email, int semestre) {
-        this.nombreCompleto = nombreCompleto;
-        this.edad = edad;
-        this.email = email;
-        this.semestre = semestre;
+    public Student(String fullName, int age, String prefixEmail, int semester) {
+        this.fullName = fullName;
+        this.age = age;
+        this.prefixEmail = prefixEmail;
+        this.semester = semester;
     }
 
     public String getNombreCompleto() {
@@ -21,10 +21,10 @@ public class Estudiante {
     }
 
     public String getEmail() {
-        return email;
+        return prefixEmail;
     }
 
-    public int getSemestre() {
+    public int getSemester() {
         return semester;
     }
 }
