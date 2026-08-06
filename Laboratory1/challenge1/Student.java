@@ -1,27 +1,26 @@
 public class Student {
-
     private String fullName;
     private int age;
-    private String prefixEmail;
+    private String email;
     private int semester;
 
-    public Student(String fullName, int age, String prefixEmail, int semester) {
+    public Student(String fullName, int age, String email, int semester) {
         this.fullName = fullName;
         this.age = age;
-        this.prefixEmail = prefixEmail;
+        this.email = email;
         this.semester = semester;
     }
 
-    public String getNombreCompleto() {
+    public String getFullName() {
         return fullName;
     }
 
-    public int getEdad() {
+    public int getAge() {
         return age;
     }
 
     public String getEmail() {
-        return prefixEmail;
+        return email;
     }
 
     public int getSemester() {
