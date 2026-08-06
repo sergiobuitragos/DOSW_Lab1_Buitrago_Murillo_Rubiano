@@ -65,7 +65,7 @@ rewriting commit history.
 3. Same line conflict: When two branches modify the same line of a file, Git 
 cannot automatically decide which version to keep and generates a merge conflict. 
 The developer must manually resolve it by editing the file, removing the conflict 
-markers (<<<<<<<, =======, >>>>>>>), and committing the resolved version.
+markers and committing the resolved version.
 
 4. Graphical branch history: You can display the branch and merge history 
 graphically in the terminal using:
