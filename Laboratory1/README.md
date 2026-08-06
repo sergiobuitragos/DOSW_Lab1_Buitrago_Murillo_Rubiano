@@ -49,3 +49,45 @@ A Challenge4 class was implemented using both HashMap and Hashtable to store key
 
 
 ## Conceptual Questionnaire Answers
+1. Team agreements: Each student works on their own computer and branch. 
+Commits must be meaningful and traceable. All challenges must be merged into 
+develop before merging to main. The branch history must be preserved at all times.
+
+2. git merge vs git rebase: git merge combines two branches creating a new 
+merge commit, preserving the full history. git rebase moves or replays commits 
+from one branch on top of another, resulting in a cleaner linear history but 
+rewriting commit history.
+
+3. Same line conflict: When two branches modify the same line of a file, Git 
+cannot automatically decide which version to keep and generates a merge conflict. 
+The developer must manually resolve it by editing the file, removing the conflict 
+markers (<<<<<<<, =======, >>>>>>>), and committing the resolved version.
+
+4. Graphical branch history: You can display the branch and merge history 
+graphically in the terminal using:
+git log --oneline --graph --decorate --all
+
+5. Commit vs Push: A commit saves changes locally in the repository history. 
+A push uploads those local commits to the remote repository so others can access them.
+
+6. git stash and git stash pop: git stash temporarily saves uncommitted changes 
+without committing them, allowing you to switch branches with a clean working tree. 
+git stash pop restores those saved changes back to the working directory.
+
+7. HashMap vs Hashtable: HashMap is not synchronized, allows one null key and 
+multiple null values, and is faster in single-threaded environments. Hashtable is 
+synchronized (thread-safe), does not allow null keys or values, and is slower due 
+to its thread-safety overhead.
+
+8. Collectors.toMap() advantages: Collectors.toMap() allows transforming a 
+stream directly into a Map in a declarative and concise way. It supports key/value 
+mapping functions, merge functions for duplicate keys, and custom Map suppliers, 
+avoiding the verbosity and error-proneness of traditional loops.
+
+9. stream().map() operation: stream().map() performs an intermediate 
+transformation operation. It applies a function to each element of the stream and 
+returns a new stream with the transformed elements, without modifying the original collection.
+
+10. stream().filter(): stream().filter() applies a predicate (boolean condition) 
+to each element and returns a new stream containing only the elements that satisfy 
+the condition. It is an intermediate operation that does not modify the original collection.
