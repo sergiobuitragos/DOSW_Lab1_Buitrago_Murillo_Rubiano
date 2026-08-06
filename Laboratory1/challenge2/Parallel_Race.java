@@ -15,6 +15,11 @@ public class Parallel_Race {
         return "Min: " + findMin.apply(numbers) + ", Count: " + countElements.apply(numbers);
     }
 
+    public String secondCollission(List<Integer> numbers) {
+        int min = findMin.apply(numbers);
+        return (min % 2 == 0) ? "value divisible by 2" : "value not divisible by 2";
+    }
+
     public static void main(String[] args) {
         List<Integer> numbers = List.of(5, 3, 8, 1, 9, 2, 7, 4, 6);
         System.out.println("Numbers: " + numbers);
