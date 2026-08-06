@@ -1,38 +1,44 @@
 package challenge3;
 
+import java.util.function.Function;
+import java.util.stream.Stream;
+
 /**
- * recibe el mensaje y lo repite tres veces y separa cada repetición
+ * Repeats a message three times and then reverses the final result.
  */
 public class Challenge3 {
 
     /**
-     * Repite un mensaje tres veces separado por espacios.
+     * Repeats the message three times (using StringBuilder and stream())
+     * and then reverses the final result (using StringBuffer).
      *
-     * @param message 
-     * @return 
+     * @param message
+     * @return
      */
     public static String mysteriousEcho(String message) {
 
         StringBuilder builder = new StringBuilder();
 
-        for (int i = 0; i < 3; i++) {
-            builder.append(message);
+        Stream.of(message, message, message)
+                .forEach(m -> builder.append(m).append(" "));
 
-            if (i < 2) {
-                builder.append(" ");
-            }
-        }
+        String repeated = builder.toString().trim();
 
-        return builder.toString();
+        StringBuffer buffer = new StringBuffer(repeated);
+
+        return buffer.reverse().toString();
     }
 
     /**
-     *Funcion principal
+     * Main function.
+     *
      * @param args
      */
     public static void main(String[] args) {
 
-        String result = mysteriousEcho("Hola");
+        Function<String, String> echo = Challenge3::mysteriousEcho;
+
+        String result = echo.apply("Hola");
 
         System.out.println("Resultado: " + result);
     }
