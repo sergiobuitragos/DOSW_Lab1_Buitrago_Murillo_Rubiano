@@ -20,6 +20,11 @@ public class Parallel_Race {
         return (min % 2 == 0) ? "value divisible by 2" : "value not divisible by 2";
     }
 
+    public String thirdCollission(List<Integer> numbers) {
+        int count = numbers.size();
+        return (count % 2 != 0) ? "list size is odd" : "list size is not odd";
+    }
+
     public static void main(String[] args) {
         List<Integer> numbers = List.of(5, 3, 8, 1, 9, 2, 7, 4, 6);
         System.out.println("Numbers: " + numbers);
