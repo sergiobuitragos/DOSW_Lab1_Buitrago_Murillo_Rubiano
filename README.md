@@ -13,7 +13,8 @@ Lab 1 de Dosw
 ### Challenge 1 – Welcome Message
 
 #### Evidence
-![alt text](image-7.png)
+<img width="1083" height="279" alt="image" src="https://github.com/user-attachments/assets/0d3f3d3c-086c-49f1-8f36-d71993a8359d" />
+
 
 #### Description
 A Student class was created to store each team member's full name, age, institutional email, and current semester. A WelcomeMessage class was then implemented using Java Streams with stream(), map(), and collect() along with lambda expressions to iterate over a `List<Student>` and print a formatted welcome message for each member.
@@ -21,7 +22,8 @@ A Student class was created to store each team member's full name, age, institut
 ### Challenge 2 – Parallel Commit Race
 
 #### Evidence
-![alt text](image-6.png)
+<img width="770" height="545" alt="image" src="https://github.com/user-attachments/assets/4177691c-c0e8-4f9f-a3e8-3dcf059a402d" />
+
 
 #### Description
 A ParallelRace class was implemented using lambda-based functions to process a list of integers. Lane One implemented a findMax lambda to return the largest number. Lane Two implemented findMin and countElements lambdas to return the smallest number and total element count. Both lanes were developed on separate branches and merged, generating intentional conflicts that were resolved manually.
@@ -29,7 +31,8 @@ A ParallelRace class was implemented using lambda-based functions to process a l
 ### Challenge 3
 
 #### Evidence
-![alt text](image-5.png)
+<img width="1264" height="361" alt="image" src="https://github.com/user-attachments/assets/c27ab2f2-9940-4a3d-a5c1-5eb53a022e47" />
+
 
 #### Description
 This challenge was completed through collaborative work using Git, simulating a real-world merge conflict between two developers. Each student created their own branch from the develop branch. The first student implemented a mysteriousEcho method that repeats a message three times using StringBuilder, while the second student implemented the same method to reverse the message using StringBuffer.
@@ -42,7 +45,8 @@ The entire process—including the creation of independent branches, the merge c
 ### Challenge 4 – The Treasure of Duplicate Keys
 
 #### Evidence
-![alt text](image-4.png)
+<img width="1109" height="746" alt="image" src="https://github.com/user-attachments/assets/21d8f4ac-339a-448d-a187-ef818549497d" />
+
 
 #### Description
 A Challenge4 class was implemented using both HashMap and Hashtable to store key-value pairs of type (String, Integer), ignoring duplicate keys and preserving the first value found. A merge method combined both maps using Stream.concat(), Collectors.toMap() and TreeMap to prioritize Hashtable values on duplicates, convert all keys to uppercase, and sort them in ascending order. A merge conflict was intentionally generated and resolved during the integration of both branches.
