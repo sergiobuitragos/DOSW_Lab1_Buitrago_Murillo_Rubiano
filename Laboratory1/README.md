@@ -47,6 +47,18 @@ The entire process—including the creation of independent branches, the merge c
 #### Description
 A Challenge4 class was implemented using both HashMap and Hashtable to store key-value pairs of type (String, Integer), ignoring duplicate keys and preserving the first value found. A merge method combined both maps using Stream.concat(), Collectors.toMap() and TreeMap to prioritize Hashtable values on duplicates, convert all keys to uppercase, and sort them in ascending order. A merge conflict was intentionally generated and resolved during the integration of both branches.
 
+### Challenge 5 – Battle of Sets
+
+#### Evidence
+
+
+#### Description
+Two army collections were implemented using `HashSet` and `TreeSet` to store unique 
+integers. The `HashSet` army removes all multiples of 3 using `stream().filter()`, 
+while the `TreeSet` army removes all multiples of 5 using the same approach, 
+maintaining natural ascending order. Both collections were then merged into a single 
+`TreeSet` to eliminate duplicates and preserve ascending order, with results printed 
+using a lambda expression with `forEach()`.
 
 ## Conceptual Questionnaire Answers
 1. Team agreements: Each student works on their own computer and branch. 
