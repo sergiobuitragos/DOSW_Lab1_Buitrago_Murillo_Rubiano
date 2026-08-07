@@ -50,7 +50,7 @@ A Challenge4 class was implemented using both HashMap and Hashtable to store key
 ### Challenge 5 – Battle of Sets
 
 #### Evidence
-![alt text](image-8.png)
+![alt text](image-9.png)
 
 #### Description
 Two army collections were implemented using HashSet and TreeSet to store unique 
