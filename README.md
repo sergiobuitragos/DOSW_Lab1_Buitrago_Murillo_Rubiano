@@ -6,7 +6,7 @@ Lab 1 de Dosw
 
 - Sergio Daniel Buitrago
 - Miguel Angel Murillo Hurtado
-- Juanita Rubiano
+- Juanita Rubiano Fernandez
 
 ## Challenge Evidence
 
@@ -96,5 +96,36 @@ returns a new stream with the transformed elements, without modifying the origin
 to each element and returns a new stream containing only the elements that satisfy 
 the condition. It is an intermediate operation that does not modify the original collection.
 
+11.Creating a Feature Branch from develop
+  11.1 Switch to develop
+    git checkout develop,This is the branch where the team's in-progress work lives, before it goes to production.
+  11.2 Update it to make sure you're starting from the latest version: git pull origin develop
+  11.3 Create the new branch and switch to it in one step:
+    git checkout -b feature/your-feature-name, This creates a copy of develop where you can work without affecting anyone else's work.      The -b flag tells Git to create the branch if it doesn't already exist.
+  11.4 Work as usual: edit files, and save your progress with add and commit as many times as needed.
+  11.5 Push the branch to the remote repository so your team can see it:
+    git push -u origin feature/your-feature-name, This serves as a backup and gives your teammates visibility into your commits. 
+  Atlassian
+  This is the standard Git Flow pattern: develop holds changes before they're released, feature branches are created from it, and when     work is finished, they get merged back into develop.
+
+12.  Difference between git branch and git checkout -b
+    
+git branch <name> only creates a new branch but keeps you on your current branch, while git checkout -b <name> creates the branch and switches to it in one step, equivalent to running git branch <name> followed by git checkout <name> — in modern Git (2.23+) this is also done with git switch -c <name>; in short, use git branch if you just want to set up a branch without moving into it, and checkout -b/switch -c when you want to create and jump into it right away, which is the more common case.
+
+14.Developing in feature/* branches instead of directly on main matters because it encapsulates each feature so multiple developers can work without disturbing the main codebase, and it ensures main never contains broken code — a huge advantage for continuous integration; on top of that, isolating work this way limits the effect of unfinished changes on other team members until the change is actually ready to merge, and it enables pull requests, which give other developers the chance to review and sign off on a feature before it's integrated into the official project — that's exactly why many teams and platforms like GitHub and GitLab explicitly forbid pushing directly to main, in favor of merge/pull requests instead
+
+
+Bibliography
+- Atlassian Git Tutorial – Git Feature Branch Workflow
+https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
+
+- Mergify – Feature Branch: A Quick Walk Through Git Workflow
+https://articles.mergify.com/feature-branch-a-quick-walk-through-git-workflow/
+
+- Hugging Face Datasets – git-prompt dataset (Git command reference/instructions)
+https://huggingface.co/datasets/hesamation/git-prompt/viewer
+
+- University of Washington, CSE 391 Course Materials – Git Branching Exercises
+https://courses.cs.washington.edu/courses/cse391/24wi/lectures/5/questions
 
 
