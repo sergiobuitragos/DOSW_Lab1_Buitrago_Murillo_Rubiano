@@ -50,15 +50,15 @@ A Challenge4 class was implemented using both HashMap and Hashtable to store key
 ### Challenge 5 – Battle of Sets
 
 #### Evidence
-
+![alt text](image-8.png)
 
 #### Description
-Two army collections were implemented using `HashSet` and `TreeSet` to store unique 
-integers. The `HashSet` army removes all multiples of 3 using `stream().filter()`, 
-while the `TreeSet` army removes all multiples of 5 using the same approach, 
+Two army collections were implemented using HashSet and TreeSet to store unique 
+integers. The HashSet army removes all multiples of 3 using stream().filter(), 
+while the TreeSet army removes all multiples of 5 using the same approach, 
 maintaining natural ascending order. Both collections were then merged into a single 
-`TreeSet` to eliminate duplicates and preserve ascending order, with results printed 
-using a lambda expression with `forEach()`.
+TreeSet to eliminate duplicates and preserve ascending order, with results printed 
+using a lambda expression with forEach()
 
 ## Conceptual Questionnaire Answers
 1. Team agreements: Each student works on their own computer and branch. 
